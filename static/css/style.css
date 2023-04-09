@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.asignBanner{
+    width: auto;
+    margin-bottom: 100px;
+}
+
+h1{
+    text-align: center;
+}
+
+.btn{
+    background-color: rebeccapurple;
+    color: white;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;   
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.surveyContainer{   
+    text-align: center; 
+    margin-top: 200px;
+    margin-left: 25%;
+    width: 50%;
+    border-radius: 10px;
+    height: 500px;
+    padding-top: 10%;
+}
+
+
+.formContainer{
+    display: block;
+}
+
+textarea {
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+/* Util */
+
+.fontbig{
+    font-size: 30pt;
+}
+
+.plumText{
+    color: plum;
+}
+
+.bggrey{
+    background-color: rgb(43, 37, 37);
+}
+
+.whiteBorder{
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.resultContainer{
+    margin: auto, auto;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.spacing{
+    font-size: 16pt;
+    margin: 20px;
+}

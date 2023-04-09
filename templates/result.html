@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap'); </style>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css')}}" >
+    <title>Document</title>
+</head>
+<body>
+    <div class="surveyContainer bggrey">
+        <p class="spacing">Name: {{session['name']}}</p>
+        <p class="spacing">Power Level: {{session['power_level']}}</p>
+        <p class="spacing">Favorite Language: {{session['fav_language']}}</p>
+        <p class="spacing">Joke of the day: {{session['msg']}}</p>
+    </div>
+</body>
+</html>

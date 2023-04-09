@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap'); </style>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css')}}" >
+    <title>Document</title>
+</head>
+<body>
+    <div class="asignBanner"> 
+        <h1>Dojo Survey!   Fill it out for some cookies* :)</h1>
+    </div>
+    <div class="surveyContainer bggrey">
+        <p class="fontbig plumText">Dojo Survey</p>
+            <form method="POST" action="/process" class="formContainer">
+                <div class="spacing">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" class="whiteBorder">
+                </div>
+                <div class="spacing">
+                    <label for="powerLevel">What's Your Power Level?</label>
+                    <select name="power_level" id="powerLevel">
+                        <option value="100">100</option>
+                        <option value="1000">1000</option>
+                        <option value="3000">3000</option>
+                        <option value="7000">7000</option>
+                        <option value ="Over 9000!">Over 9000!</option>
+                    </select>
+                </div>
+                <div class="spacing">
+                    <label for="favLanguage">Favorite Language: </label>
+                    <select name="fav_language" id="favLanguage">
+                        <option value="javascript">JavaScript</option>
+                        <option value="html">Html</option>
+                        <option value="css">CSS</option>
+                        <option value="python">Python(snake)</option>
+                    </select>
+                </div>
+                <div class="spacing">
+                    <textarea name="msg" placeholder="Leave me a funny joke!" rows="4" cols="30" maxlength="200" class="fontmed"></textarea>
+                </div>
+                <button class="btn">Send!</button>
+            </form>
+    </div>
+</body>
+</html>
